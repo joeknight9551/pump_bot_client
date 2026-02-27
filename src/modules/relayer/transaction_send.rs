@@ -71,7 +71,7 @@ pub async fn send_sender_transaction(
     info!("TX making: {:?}", start_time.elapsed());
     let tx_submission_start = Instant::now();
     let response = HTTP_CLIENT
-        .post("https://rpc.ny.shyft.to/?api_key=rMoG4rcm8MbzVcPF")
+        .post("https://grpc.fra.shyft.to/?api_key=0c4b7b3f-84df-4160-b61d-ad3c1e84ddb0")
         .header("Content-Type", "application/json")
         .json(&request_body)
         .send()
